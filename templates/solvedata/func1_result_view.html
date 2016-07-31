@@ -78,6 +78,11 @@ function buildTable($el, cells, rows) {
 $(function () {
     buildTable($('#table'), 50, 50);
 });
+$(function () {
+    $(window).resize(function () {
+        $('#table').bootstrapTable('resetView');
+    });
+});
 </script>
 
 <script src="http://code.highcharts.com/highcharts.js"></script>
