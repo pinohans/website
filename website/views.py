@@ -40,6 +40,7 @@ def register(request):
         os.makedirs(settings.MEDIA_ROOT+username+'/result')
         if username == 'hehe':
             assign('solvedata.solve_data',user)
+            assign('solvedata.func1',user)
         user.save()
         return render(request,'register_success.html')
     else:
