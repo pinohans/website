@@ -73,23 +73,23 @@
 					</ul>
                 </li>
 				<li id="func1">
-                    <a href="{%url 'data_func1_1' %}">
+                    <a href="{%url 'data_func2_2' %}">
                         <i class="pe-7s-note2"></i>
                         <p>功能二</p>
                     </a>
 					<ul style="margin-left:19px">
 						<li>
-							<a href="{%url 'data_func1_1' %}">
+							<a href="{%url 'data_func2_2' %}">
 								方式一
 							</a>
 						</li>
 						<li>
-							<a href="{%url 'data_func1_1' %}">
+							<a href="{%url 'data_func2_2' %}">
 								方式二
 							</a>
 						</li>
 						<li>
-							<a href="{%url 'data_func1_result' %}">
+							<a href="{%url 'data_func2_result' %}">
 								结果
 							</a>
 						</li>
@@ -132,7 +132,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">方式一</a>
+                    <a class="navbar-brand" href="#">{% block subtitle %}系统介绍{% endblock %}</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
